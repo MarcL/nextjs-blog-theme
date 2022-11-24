@@ -2,15 +2,14 @@ name: Run Cypress tests
 on:
   pull_request:
     types: [opened]
+  push:
+    branches:
+      - main
 
 jobs:
   cypress:
     name: Cypress
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: true
-      matrix:
-        containers: [1]
     steps:
       - name: Checkout
         uses: actions/checkout@v2
