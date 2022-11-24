@@ -42,7 +42,7 @@ jobs:
         uses: kamranayub/wait-for-netlify-action@v2.1.1
         id: deploy
         with:
-          site_id: "marcl-nextjs-blog-theme"
+          site_name: "marcl-nextjs-blog-theme"
           max_timeout: 120
         env:
           NETLIFY_TOKEN: ${{ secrets.NETLIFY_API_TOKEN }}
