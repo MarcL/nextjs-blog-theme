@@ -8,8 +8,10 @@
 [[plugins]]
   package = "netlify-plugin-cypress"
 
-  [plugins.inputs.postBuild]
-    enable = true
-
+  # Skip the default tests before the deploy
   [plugins.inputs]
-    enable = false
+    skip = true
+
+  # Run the tests after the deploy
+  [plugins.inputs.onSuccess]
+    enable = true
