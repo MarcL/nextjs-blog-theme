@@ -4,14 +4,3 @@
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
-
-[[plugins]]
-  package = "netlify-plugin-cypress"
-
-  # # Skip the default tests before the deploy
-  # [plugins.inputs]
-  #   enable = false
-
-  # # Run the tests after the deploy
-  # [plugins.inputs.onSuccess]
-  #   enable = true
