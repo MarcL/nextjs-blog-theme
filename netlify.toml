@@ -10,7 +10,7 @@
 
   # Skip the default tests before the deploy
   [plugins.inputs]
-    skip = true
+    enable = false
 
   # Run the tests after the deploy
   [plugins.inputs.onSuccess]
